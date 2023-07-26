@@ -54,7 +54,7 @@
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current text-black"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                 </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black absolute -right-8 top-14">
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black absolute -right-1 top-13">
                   <li><a>Home</a></li>
                   <li><a>About us</a></li>
                   <li><a>Shop</a></li>
@@ -83,7 +83,7 @@
       </nav>
     </header>
     
-    <main class="container max-w-[1280px] mx-auto font-lato lg:mt-14">
+    <main class="container max-w-[1280px]  font-lato lg:mt-14">
           <!-- banner section -->
           <section class="lg:h-[550px] px-4 lg:relative md:relative">
             <!-- Slider section -->
@@ -189,36 +189,36 @@
 
           <!-- Deal of the day section -->
           <section class="lg:mt-32 md:mt-32 mt-6 lg:px-14 px-4">   
-            <div class="lg:flex justify-between items-start px-10">
+            <div class="lg:flex justify-between items-center px-10">
               <!-- Deals Content -->
               <div class="lg:w-[550px] mb-5 text-center lg:text-left">
-                <h2 class="text-4xl font-bold mb-4">Deal of the day</h2>
-                <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                <h2 class="text-4xl lg:font-extrabold font-bold mb-4">Deal of the day</h2>
+                <p class="text-base">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
               </div>
               <!-- Countdown -->
               <div class="">
-                <div class="grid grid-flow-col gap-5 md:justify-items-center md:my-10">
+                <div class="grid grid-flow-col gap-5 md:justify-items-center md:my-10 text-center">
                   <div class="flex flex-col">
-                    <span class="countdown font-mono text-5xl">
-                      <span style="--value:15;"></span>
+                    <span class="countdown font-mono text-5xl lg:font-extrabold">
+                      <span style="--value:15;"></span> 
                     </span>
                     days
                   </div> 
                   <div class="flex flex-col">
-                    <span class="countdown font-mono text-5xl">
+                    <span class="countdown font-mono text-5xl lg:font-extrabold">
                       <span style="--value:10;"></span>
                     </span>
                     hours
                   </div> 
                   <div class="flex flex-col">
-                    <span class="countdown font-mono text-5xl">
+                    <span class="countdown font-mono text-5xl lg:font-extrabold">
                       <span style="--value:24;"></span>
                     </span>
                     min
                   </div> 
                   <div class="flex flex-col">
-                    <span class="countdown font-mono text-5xl">
-                      <span style="--value:12;"></span>
+                    <span class="countdown font-mono text-5xl lg:font-extrabold">
+                      <span style="--value:12;"></span> 
                     </span>
                     sec
                   </div>
@@ -226,9 +226,9 @@
               </div>  
             </div>
             <!-- Fruits card -->
-            <div class="lg:mt-24 md:mt-6 mt-6 flex flex-col md:grid md:grid-cols-2 lg:flex-row gap-6">
+            <div class="lg:mt-24 my-32 md:mt-6 mt-6 flex flex-col lg:flex-row md:flex-col md:justify-center gap-6 md:mx-4">
               <!-- Card-1 -->
-              <div class="card w-96 shadow-xl rounded-xl border-[#1212121a] border">
+              <div class="card lg:w-96 shadow-xl rounded-xl border-[#1212121a] border">
                 <figure><img class="my-10 mx-24" src="./images/fruit6.png" alt="" /></figure>
                 <div class="card-body flex items-center">
                   <h2 class="card-title">12.90$ - 18.85$</h2>
@@ -279,7 +279,7 @@
                 </div>
               </div>
               <!-- Card-2 -->
-              <div class="card w-96 shadow-xl rounded-xl border-[#1212121a] border">
+              <div class="card lg:w-96 shadow-xl rounded-xl border-[#1212121a] border">
                 <figure><img class="my-10 mx-24" src="./images/fruit7.png" alt="" /></figure>
                 <div class="card-body flex items-center">
                   <h2 class="card-title">12.90$ - 18.85$</h2>
@@ -330,7 +330,7 @@
                 </div>
               </div>
               <!-- Card-3 -->
-              <div class="card w-96 shadow-xl rounded-xl border-[#1212121a] border">
+              <div class="card lg:w-96 shadow-xl rounded-xl border-[#1212121a] border">
                 <figure><img class="my-10 mx-24" src="./images/fruit8.png" alt="" /></figure>
                 <div class="card-body flex items-center">
                   <h2 class="card-title">12.90$ - 18.85$</h2>
@@ -381,7 +381,7 @@
                 </div>
               </div>
               <!-- Card-4 -->
-              <div class="card w-96 shadow-xl rounded-xl border-[#1212121a] border">
+              <div class="card lg:w-96 shadow-xl rounded-xl border-[#1212121a] border">
                 <figure><img class="my-10 mx-24" src="./images/fruit9.png" alt="" /></figure>
                 <div class="card-body flex items-center">
                   <h2 class="card-title">12.90$ - 18.85$</h2>
@@ -432,7 +432,80 @@
                 </div>
               </div>
             </div>
+          </section>  
+
+          <!-- Team section -->
+          <section class=" lg:mx-28 px-4 lg:my-28">
+            <div class="hero rounded-xl lg:h-[550px] relative " style="background-image: url(../images/team.png);">
+              <div class="hero-overlay bg-opacity-70 rounded-xl"></div>
+              <!-- Team Content -->
+              <div class="hero-content text-center text-neutral-content absolute lg:left-[22%] lg:top-[10%] top-[0%]">
+                <div class="max-w-xl pb-20">
+                  <h1 class="mb-5 text-4xl lg:text-5xl font-bold lg:font-extrabold">Meet the team section</h1>
+                  <p class="">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+              </div>
+              <!--Team Card-->
+              <div class="lg:mt-36 mt-48 mb-10 grid grid-cols-1 lg:grid-cols-4 lg:gap-16 gap-8">
+                <!-- team card-1 -->
+                <div class="text-white flex items-center flex-col">
+                  <img class="rounded-full w-32" src="./images/member1.png" alt="">
+                  <h3 class="text-xl mt-5">Awlad Hossain</h3>
+                  <p class="text-sm mt-2">Fruits Expert</p>
+                  <div class="mt-4 flex flex-row justify-center items-center gap-3 text-center">
+                    <img class="w-6" src="./images/facebook.svg" alt="">
+                    <img src="./images/twitter.svg" alt="">
+                    <img src="./images/linkdin.svg" alt="">
+                  </div>
+                </div>
+                <!-- team card-2 -->
+                <div class="text-white flex items-center flex-col">
+                  <img class="rounded-full w-32" src="./images/member2.png" alt="">
+                  <h3 class="text-xl mt-5">Safia Chowdhury</h3>
+                  <p class="text-sm mt-2">Fruits Expert</p>
+                  <div class="mt-4 flex flex-row justify-center items-center gap-3 text-center">
+                    <img class="w-6" src="./images/facebook.svg" alt="">
+                    <img src="./images/twitter.svg" alt="">
+                    <img src="./images/linkdin.svg" alt="">
+                  </div>
+                </div>
+                <!-- team card-3 -->
+                <div class="text-white flex items-center flex-col">
+                  <img class="rounded-full w-32" src="./images/member3.png" alt="">
+                  <h3 class="text-xl mt-5">Rokib Hossain</h3>
+                  <p class="text-sm mt-2">Fruits Expert</p>
+                  <div class="mt-4 flex flex-row justify-center items-center gap-3 text-center">
+                    <img class="w-6" src="./images/facebook.svg" alt="">
+                    <img src="./images/twitter.svg" alt="">
+                    <img src="./images/linkdin.svg" alt="">
+                  </div>
+                </div>
+                <!-- team card-4 -->
+                <div class="text-white flex items-center flex-col">
+                  <img class="rounded-full w-32" src="./images/member4.png" alt="">
+                  <h3 class="text-xl mt-5">Chaity</h3>
+                  <p class="text-sm mt-2">Fruits Expert</p>
+                  <div class="mt-4 flex flex-row justify-center items-center gap-3 text-center">
+                    <img class="w-6" src="./images/facebook.svg" alt="">
+                    <img src="./images/twitter.svg" alt="">
+                    <img src="./images/linkdin.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
+
+          <!-- Why Choose us -->
+          <section class="text-center mt-6">
+            <h1 class="lg:text-5xl lg:font-extrabold text-xl font-extrabold">Why Choose Us</h1>
+            <p class="text-base lg:pt-6 pt-4 lg:px-80">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            <!-- 3 column -->
+            <div>
+
+            </div>
+
+          </section>
+          
     </main>
 
     <footer>

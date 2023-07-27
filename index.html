@@ -33,10 +33,10 @@
         }
       </style>
 </head>
-<body>
+<body class="lg:px-16">
     <header class="container max-w-[1280px] mx-auto font-lato lg:mt-4">
       <!-- Navbar section -->
-      <nav class="lg:bg-fruit-primary py-4 lg:px-8 px-4 lg:rounded-full">
+      <nav class="lg:bg-fruit-primary py-4 px-4 lg:rounded-full">
         <div class="flex items-center justify-between">
         <div>
             <!-- desktop menu -->
@@ -146,7 +146,7 @@
               </div> 
             </div>
             <!-- 5fruits card -->
-            <div class="lg:grid md:grid justify-items-center lg:absolute md:absolute lg:left-[75px] md:left-[60px] lg:-bottom-[50px] md:-bottom-[70px]  hidden" >
+            <div class="lg:grid md:grid justify-items-center lg:absolute md:absolute lg:left-[47px] md:left-[60px] lg:-bottom-[50px] md:-bottom-[70px]  hidden" >
               <div class="py-6 px-6 bg-white drop-shadow-lg lg:flex flex-col lg:flex-row md:flex md:flex-row  justify-center items-center lg:gap-24 text-center rounded-xl ">
                 <!--fruit-1-->
                 <div class="">
@@ -188,45 +188,45 @@
           </section>
 
           <!-- Deal of the day section -->
-          <section class="lg:mt-32 md:mt-32 mt-6 lg:px-14 px-4">   
-            <div class="lg:flex justify-between items-center px-10">
+          <section class="lg:mt-32 md:mt-32 mt-6 px-4">   
+            <div class="lg:flex justify-between items-center">
               <!-- Deals Content -->
               <div class="lg:w-[550px] mb-5 text-center lg:text-left">
                 <h2 class="text-4xl lg:font-extrabold font-bold mb-4">Deal of the day</h2>
                 <p class="text-base">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
               </div>
               <!-- Countdown -->
-              <div class="">
-                <div class="grid grid-flow-col gap-5 md:justify-items-center md:my-10 text-center">
+              <div class="px-4 md:px-20">
+                <div class="grid grid-flow-col gap-4 md:justify-items-center md:my-10 text-center">
                   <div class="flex flex-col">
-                    <span class="countdown font-mono text-5xl lg:font-extrabold">
-                      <span style="--value:15;"></span> 
+                    <span class="countdown font-mono text-4xl lg:text-5xl md:text-5xl lg:font-extrabold">
+                      <span style="--value:15;"></span>&nbsp;: 
                     </span>
-                    days
+                    <p class="-ml-8 lg:-ml-10">days</p>
                   </div> 
                   <div class="flex flex-col">
-                    <span class="countdown font-mono text-5xl lg:font-extrabold">
-                      <span style="--value:10;"></span>
+                    <span class="countdown font-mono text-4xl lg:text-5xl md:text-5xl lg:font-extrabold">
+                      <span style="--value:10;"></span>&nbsp;: 
                     </span>
-                    hours
+                    <p class="-ml-8 lg:-ml-12">hours</p>
                   </div> 
                   <div class="flex flex-col">
-                    <span class="countdown font-mono text-5xl lg:font-extrabold">
-                      <span style="--value:24;"></span>
+                    <span class="countdown font-mono text-4xl lg:text-5xl md:text-5xl lg:font-extrabold">
+                      <span style="--value:24;"></span>&nbsp;:  
                     </span>
-                    min
+                    <p class="-ml-8 lg:-ml-12">min</p>
                   </div> 
                   <div class="flex flex-col">
-                    <span class="countdown font-mono text-5xl lg:font-extrabold">
+                    <span class="countdown font-mono text-4xl lg:text-5xl md:text-5xl lg:font-extrabold">
                       <span style="--value:12;"></span> 
                     </span>
-                    sec
+                    <p class="-ml-1">sec</p>
                   </div>
                 </div>
               </div>  
             </div>
             <!-- Fruits card -->
-            <div class="lg:mt-24 my-32 md:mt-6 mt-6 flex flex-col lg:flex-row md:flex-col md:justify-center gap-6 md:mx-4">
+            <div class="lg:mt-24 md:mt-6 mt-6 flex flex-col lg:flex-row md:flex-col md:justify-center gap-6 md:mx-4">
               <!-- Card-1 -->
               <div class="card lg:w-96 shadow-xl rounded-xl border-[#1212121a] border">
                 <figure><img class="my-10 mx-24" src="./images/fruit6.png" alt="" /></figure>
@@ -432,6 +432,7 @@
                 </div>
               </div>
             </div>
+            <button class="btn bg-fruit-primary flex mx-auto lg:my-12 mt-6 mb-12  text-white">Shop All</button>
           </section>  
 
           <!-- Team section -->
@@ -446,7 +447,7 @@
                 </div>
               </div>
               <!--Team Card-->
-              <div class="lg:mt-36 mt-48 mb-10 grid grid-cols-1 lg:grid-cols-4 lg:gap-16 gap-8">
+              <div class="lg:mt-48 mt-48 mb-10 grid grid-cols-1 lg:grid-cols-4 lg:gap-16 gap-8">
                 <!-- team card-1 -->
                 <div class="text-white flex items-center flex-col">
                   <img class="rounded-full w-32" src="./images/member1.png" alt="">
@@ -500,9 +501,9 @@
             <h1 class="lg:text-5xl lg:font-extrabold text-xl font-extrabold">Why Choose Us</h1>
             <p class="text-base lg:pt-6 pt-4 lg:px-80">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
             <!-- 3 column -->
-            <div class="mt-12 grid grid-cols-1 lg:grid-cols-3 justify-items-start gap-6 lg:px-14">
+            <div class="mt-12 grid grid-cols-1 lg:grid-cols-3 justify-items-start gap-2 lg:px-20">
               <!-- column-1 -->
-              <div class="grid grid-cols-1 space-y-3">
+              <div class="grid grid-cols-1 space-y-3 p-8 lg:p-0">
                 <!-- left-row-1 -->
                 <div class="flex flex-row gap-4 items-start">
                   <div class="rounded-full bg-[#1212121a] p-2">
@@ -538,11 +539,11 @@
                 </div>
               </div>
               <!-- column-2 -->
-              <div>
+              <div class="px-4">
                 <img src="./images/whychoose1.png" alt="">
               </div>
               <!-- column-3 -->
-              <div class="grid grid-cols-1 space-y-3 ">
+              <div class="grid grid-cols-1 space-y-3 p-8 lg:p-0">
                 <!-- Right-row-1 -->
                 <div class="flex flex-row gap-4 items-start">
                   <div class="rounded-full bg-[#1212121a] p-2 order-2">
@@ -581,7 +582,7 @@
           </section> 
     </main>
     <!-- Footer section -->
-    <footer class="footer footer-center bg-[#121212] text-primary-content mt-32 py-20">
+    <footer class="footer footer-center bg-[#121212] text-primary-content lg:mt-32 mt-4 py-20">
       <div class="flex items-center gap-1">
         <!-- Footer logo -->
         <img class="w-10" src="./images/logo.png" alt="">
